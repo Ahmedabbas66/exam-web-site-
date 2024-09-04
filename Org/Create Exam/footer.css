@@ -1,0 +1,75 @@
+footer{
+    background-color: rgb(27, 25, 25);
+    position: relative;
+    height: 200px;
+    width: 100%;
+}
+.footer-container-1{
+    display: inline-block; 
+}
+.social-media {
+    display: inline-block; 
+    position: absolute;
+    top: 45px; 
+    right: 5%;
+}
+.list-social-media-linkedin a, .list-social-media-twitter a, .list-social-media-facebook a, .list-social-media-instagram a{
+    margin-left:25px;
+    text-decoration: none;
+    color: gray;
+}
+.list-social-media-linkedin a:hover, .list-social-media-twitter a:hover, .list-social-media-facebook a:hover, .list-social-media-instagram a:hover{
+    color: white;
+}
+.list-social-media-linkedin, .list-social-media-twitter, .list-social-media-facebook, .list-social-media-instagram {
+    display: inline-block; 
+}
+.footer-container-1-span-1{
+    display: inline-block; 
+    position: absolute;
+    top: 45px;
+    left: 5%;
+}
+.footer-container-1-span-1 a{
+    text-decoration: none;
+    color: gray;
+    margin-right: 30px;
+    font-size: small;
+}
+
+.footer-container-1-span-1 a:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.logo-footre a :hover{
+    text-decoration: underline;
+}
+hr{
+    color: gray;
+    position: absolute;
+    top: 100px;
+    width: 90%;
+    left: 5%;
+    height: 3px;
+}
+.footer-container-2{
+    position: absolute;
+    top: 150px;
+    left: 35%;
+}
+.footer-container-2 a{
+    text-decoration: none;
+    color: gray;
+    text-align: center;
+    margin-right: 2px;
+    margin-left: 2px;
+}
+.footer-container-2 div{
+display: inline-block;
+height: 20px;
+width: 1px;
+border: solid 1px gray;
+position: absolute;
+top: 0.5px;
+}

@@ -1,0 +1,83 @@
+main{
+    background-image: url("../../1.jpg");
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+.show{
+    width: 85%;
+    padding: 30px;
+    background-color: #fffffff1;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #111010;
+}
+
+a{
+    text-decoration: none;
+}
+
+a h1:hover{
+    cursor: pointer;
+    color: gray;
+}
+
+.student{
+    width: 35%;
+    height: auto;
+    border: 1px solid #8a8a8a;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.student:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px 5px #b6b6b6;
+}
+
+.examname{
+    width: 100%;
+    height: 90px;
+    background-image: url(markus-spiske-j2s9TffBQLk-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px 10px 0 0;
+    -webkit-border-radius: 10px 10px 0 0;
+    -moz-border-radius: 10px 10px 0 0;
+    -ms-border-radius: 10px 10px 0 0;
+    -o-border-radius: 10px 10px 0 0;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.examname b{
+    color: #fff;
+    font-size: x-large;
+}
+
+html {
+    --s: 150px;/*controlthesize*/
+    --c1: #b2b2b2;
+    --c2: #ffffff;
+    --c3: #d9d9d9;
+    --_g: var(--c3) 0 120deg,#0000 0;
+    background: conic-gradient(from -60deg at 50% calc(100%/3),var(--_g)),      conic-gradient(from 120deg at 50% calc(200%/3),var(--_g)),      conic-gradient(from  60deg at calc(200%/3),var(--c3) 60deg,var(--c2) 0 120deg,#0000 0),      conic-gradient(from 180deg at calc(100%/3),var(--c1) 60deg,var(--_g)),      linear-gradient(90deg,var(--c1)   calc(100%/6),var(--c2) 0 50%,                            var(--c1) 0 calc(500%/6),var(--c2) 0);
+    background-size: calc(1.732*var(--s)) var(--s);
+}

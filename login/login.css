@@ -1,0 +1,107 @@
+body {
+    background-image: url("../1.jpg");
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login {
+    width: 25%;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #111010;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #444444;
+    font-size: 20px;
+}
+
+input[type="text"], input[type="password"] {
+    width: 97%;
+    height: 40px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 18px;
+    color: #282828;
+    padding-left: 10px;
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+    outline: none;
+    box-shadow: 0 0 5px 1px #b6b6b6;
+}
+
+input[type="text"]:hover, input[type="password"]:hover {
+    outline: none;
+    box-shadow: 0 0 5px 1px #b6b6b6;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #111010;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #555;
+}
+
+.register-link {
+    text-align: center;
+    margin-top: 20px;
+}
+.register-link a {
+    color: #1d1d1d;
+    text-decoration: none;
+}
+.register-link a:hover {
+    text-decoration: underline;
+}
+
+.pass{
+    display: inline-block;
+    width: 100%;
+}
+
+.forgetpassword {
+    text-align: right;
+    margin-top: -25px;
+}
+.forgetpassword a{
+    color: #333;
+    text-decoration: none;
+}
+.forgetpassword a:hover {
+    text-decoration: underline;
+}
+html {
+    --s: 150px;/*controlthesize*/
+    --c1: #b2b2b2;
+    --c2: #ffffff;
+    --c3: #d9d9d9;
+    --_g: var(--c3) 0 120deg,#0000 0;
+    background: conic-gradient(from -60deg at 50% calc(100%/3),var(--_g)),      conic-gradient(from 120deg at 50% calc(200%/3),var(--_g)),      conic-gradient(from  60deg at calc(200%/3),var(--c3) 60deg,var(--c2) 0 120deg,#0000 0),      conic-gradient(from 180deg at calc(100%/3),var(--c1) 60deg,var(--_g)),      linear-gradient(90deg,var(--c1)   calc(100%/6),var(--c2) 0 50%,                            var(--c1) 0 calc(500%/6),var(--c2) 0);
+    background-size: calc(1.732*var(--s)) var(--s);
+}

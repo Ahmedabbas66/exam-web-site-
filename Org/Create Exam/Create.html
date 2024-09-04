@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Create Exam</title>
+        <link rel="stylesheet" href="Create.css">
+        <link rel="stylesheet" href="footer.css">
+        <link rel="stylesheet" href="header.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+        <script src="Create.js" async defer></script>
+
+
+    </head>
+
+    <header class="HEADER">
+
+        <div class="left-header">
+
+        <a href="" class="MENU"><img src="" alt="" class="menu-img"></a>
+        <!-- <a href="../../Org/Home/Home.html"><input class="home" id="abut us" type="button" value="Home"></a> -->
+        <a href="../../Org/Create Exam/Create.html"><input class="NEWS" id="news" type="button" value="Create Exam"></a>
+        <a href="../../Org/Get in Touch/get_in_touch.html"><input class="WORK" id="work" type="button" value="Get In Touch"></a>
+
+        </div>
+
+        <div class="right-header">
+            <a href="../../sing_up/sign_up.php"><input class="signup" id="signup" type="button" value="Sign Up"></a>
+            <a href="../../login/login.php"><input class="login" id="login" type="button" value="Login"></a>
+            <a href="../../Org/Profile/profile.php"><i class='fas fa-user-circle' style='font-size:48px;color:white;display:inline-block; position: absolute;right: 175px;top: 17px; cursor: pointer;'></i></a>
+            <a href="../../login/login.php"><input class="logout" id="logout" type="button" value="Logout"></a>
+        </div>
+
+    </header>
+
+    <body>
+    <main>
+            <div class="createexam">
+
+                <h1 class="Create">Create Exam</h1>
+                <form action="process.php" method="post">
+                    <div>
+                        <label class="ExTitle" for="inExTitle">Exam Title : </label>
+                        <input id="inExTitle" class="inText" type="text" name="exam_title" placeholder="Exam Name" required>
+                        
+                        <label class="ExTime" for="inExTime">Exam Time : </label>
+                        <input id="inExTime" class="intime" type="number" name="exam_time" placeholder="Time In Minutes" required>
+                
+                        <br>
+                        <div class="lableinput">
+                            <label class="ExTitle" for="subject">subject</label>
+                            <select required class="inText" name="subject" id="subject">
+                                <option value="مقدمة في الحاسبات">مقدمة في الحاسبات</option>
+                                <option value="مقدمة في نظم التشغيل">مقدمة في نظم التشغيل</option>
+                                <option value="مبادئ اقتصاد">مبادئ اقتصاد</option>
+                                <option value="مبادئ تنظيم إداري">مبادئ تنظيم إداري</option>
+                                <option value="إدارة عامة">إدارة عامة</option>
+                                <option value="مراسلات ومصطلحات أجنبية( الفاينل بالترم التاني )">مراسلات ومصطلحات أجنبية( الفاينل بالترم التاني )</option>
+                                <option value="محاسبة الشركات">محاسبة الشركات</option>
+                                <option value="البرمجة الهيكلية المتقدمة">البرمجة الهيكلية المتقدمة</option>
+                                <option value="قواعد البيانات ( 1)">قواعد البيانات ( 1)</option>
+                                <option value="دراسات اقتصادية باللغة الانجليزية">دراسات اقتصادية باللغة الانجليزية</option>
+                                <option value="إدارة إنتاج">إدارة إنتاج</option>
+                                <option value="قانون تجاري">قانون تجاري</option>
+                                <option value="قواعد البيانات ( 2 )">قواعد البيانات ( 2 )</option>
+                                <option value="حزم الإحصاء وبحوث العمليات">حزم الإحصاء وبحوث العمليات</option>
+                                <option value="محاسبة تكاليف">محاسبة تكاليف</option>
+                                <option value="اقتصاد كلي">اقتصاد كلي</option>
+                                <option value="محاسبة الضرائب">محاسبة الضرائب</option>
+                                <option value="دراسات إدارية بلغة الانجليزية">دراسات إدارية بلغة الانجليزية</option>
+                                <option value="نظم دعم القرار">نظم دعم القرار</option>
+                                <option value="شبكات وأمن المعلومات">شبكات وأمن المعلومات</option>
+                                <option value="إدارة أفراد">إدارة أفراد</option>
+                                <option value="محاسبة إدارية">محاسبة إدارية</option>
+                                <option value="دراسات محاسبية بلغة الانجليزية">دراسات محاسبية بلغة الانجليزية</option>
+                                <option value="مشروع التخرج(1)">مشروع التخرج(1)</option>
+                                <option value="أساسيات في البرمجة الهيكلية">أساسيات في البرمجة الهيكلية</option>
+                                <option value="حزم التطبيقات المكتبية">حزم التطبيقات المكتبية</option>
+                                <option value="مبادئ المحاسبة">مبادئ المحاسبة</option>
+                                <option value="مبادئ السلوك التنظيمي">مبادئ السلوك التنظيمي</option>
+                                <option value="الرياضيات والتامين">الرياضيات والتامين</option>
+                                <option value="مراسلات ومصطلحات أجنبية">مراسلات ومصطلحات أجنبية</option>
+                                <option value="نظم المعلومات الإدارية">نظم المعلومات الإدارية</option>
+                                <option value="تسويق">تسويق</option>
+                                <option value="رياضيات التمويل">رياضيات التمويل</option>
+                                <option value="إحصاء">إحصاء</option>
+                                <option value="تطبيقات الانترنت والوسائط المتعددة">تطبيقات الانترنت والوسائط المتعددة</option>
+                                <option value="دراسات اقتصادية بلغة الانجليزية">دراسات اقتصادية بلغة الانجليزية</option>
+                                <option value="محاسبة تكاليف">محاسبة تكاليف</option>
+                                <option value="اقتصاد كلي">اقتصاد كلي</option>
+                                <option value="تحليل وتصميم نظم المعلومات">تحليل وتصميم نظم المعلومات</option>
+                                <option value="التسويق والتجارة الالكترونية">التسويق والتجارة الالكترونية</option>
+                                <option value="إدارة مشتريات ومخازن">إدارة مشتريات ومخازن</option>
+                                <option value="دراسات إدارية بلغة الانجليزية">دراسات إدارية بلغة الانجليزية</option>
+                                <option value="نظم معلومات محاسبية">نظم معلومات محاسبية</option>
+                                <option value="إدارة المؤسسات المالية و التمويل">إدارة المؤسسات المالية و التمويل</option>
+                                <option value="تطبيقات الحاسب في إعداد التقارير">تطبيقات الحاسب في إعداد التقارير</option>
+                                <option value="دراسات جدوى اقتصادية">دراسات جدوى اقتصادية</option>
+                                <option value="دراسات محاسبية بلغة الانجليزية">دراسات محاسبية بلغة الانجليزية</option>
+                                <option value="مشروع التخرج(2)">مشروع التخرج(2)</option>
+                            </select>
+                        </div>
+                
+                    </div>
+                
+                    <div id="createwritten" class="Create-Written">
+                        <div>
+                            <label class="Q" for="Q-Written">Enter Question :</label>
+                            <input type="text" class="inQ" name="question" placeholder="Enter Question" required>
+                            <br>
+                            <textarea class="T-area" name="answer" placeholder="Enter the answer ..." required></textarea>
+                            <br>
+                            <b>(1 point)</b>
+                        </div>
+                    </div>
+                    <div id="createwritten" class="Create-Written">
+                        <div>
+                            <label class="Q" for="Q-Written">Enter Question :</label>
+                            <input type="text" class="inQ" name="question2" placeholder="Enter Question" required>
+                            <br>
+                            <textarea class="T-area" name="answer2" placeholder="Enter the answer ..." required></textarea>
+                            <br>
+                            <b>(1 point)</b>
+                        </div>
+                    </div>
+                    <div id="createwritten" class="Create-Written">
+                        <div>
+                            <label class="Q" for="Q-Written">Enter Question :</label>
+                            <input type="text" class="inQ" name="question3" placeholder="Enter Question" required>
+                            <br>
+                            <textarea class="T-area" name="answer3" placeholder="Enter the answer ..." required></textarea>
+                            <br>
+                            <b>(1 point)</b>
+                        </div>
+                    </div>
+                    <div id="createwritten" class="Create-Written">
+                        <div>
+                            <label class="Q" for="Q-Written">Enter Question :</label>
+                            <input type="text" class="inQ" name="question4" placeholder="Enter Question" required>
+                            <br>
+                            <textarea class="T-area" name="answer4" placeholder="Enter the answer ..." required></textarea>
+                            <br>
+                            <b>(1 point)</b>
+                        </div>
+                    </div>
+                    <div id="createwritten" class="Create-Written">
+                        <div>
+                            <label class="Q" for="Q-Written">Enter Question :</label>
+                            <input type="text" class="inQ" name="question5" placeholder="Enter Question" required>
+                            <br>
+                            <textarea class="T-area" name="answer5" placeholder="Enter the answer ..." required></textarea>
+                            <br>
+                            <b>(1 point)</b>
+                        </div>
+                    </div>
+                    <div id="createwritten" class="Create-Written">
+                        <div>
+                            <label class="Q" for="Q-Written">Enter Question :</label>
+                            <input type="text" class="inQ" name="question6" placeholder="Enter Question" required>
+                            <br>
+                            <textarea class="T-area" name="answer6" placeholder="Enter the answer ..." required></textarea>
+                            <br>
+                            <b>(1 point)</b>
+                        </div>
+                    </div>
+                    <div id="createwritten" class="Create-Written">
+                        <div>
+                            <label class="Q" for="Q-Written">Enter Question :</label>
+                            <input type="text" class="inQ" name="question7" placeholder="Enter Question" required>
+                            <br>
+                            <textarea class="T-area" name="answer7" placeholder="Enter the answer ..." required></textarea>
+                            <br>
+                            <b>(1 point)</b>
+                        </div>
+                    </div>
+                    <div id="createwritten" class="Create-Written">
+                        <div>
+                            <label class="Q" for="Q-Written">Enter Question :</label>
+                            <input type="text" class="inQ" name="question8" placeholder="Enter Question" required>
+                            <br>
+                            <textarea class="T-area" name="answer8" placeholder="Enter the answer ..." required></textarea>
+                            <br>
+                            <b>(1 point)</b>
+                        </div>
+                    </div>
+                    <div id="createwritten" class="Create-Written">
+                        <div>
+                            <label class="Q" for="Q-Written">Enter Question :</label>
+                            <input type="text" class="inQ" name="question9" placeholder="Enter Question" required>
+                            <br>
+                            <textarea class="T-area" name="answer9" placeholder="Enter the answer ..." required></textarea>
+                            <br>
+                            <b>(1 point)</b>
+                        </div>
+                    </div> 
+                    <div id="createwritten" class="Create-Written">
+                        <div>
+                            <label class="Q" for="Q-Written">Enter Question :</label>
+                            <input type="text" class="inQ" name="question10" placeholder="Enter Question" required>
+                            <br>
+                            <textarea class="T-area" name="answer10" placeholder="Enter the answer ..." required></textarea>
+                            <br>
+                            <b>(1 point)</b>
+                        </div>
+                    </div>
+                
+                    <div>
+                        <input id="save" class="save" type="submit" value="Save">
+                    </div>
+                </form>
+            </main>
+    </body>
+
+    <footer>
+        <div class="footer-container-1">
+            <div class="footer-container-1-span-1">
+                <img id="logo-footre" class="logo-footre" src="" alt="">
+                <!-- <a href="">Home</a> -->
+                <!-- <a href="">Create Exam</a> -->
+                <a href="">Get In Touch</a>
+                <a href="">About Us</a>
+            </div>
+            <div class="social-media">
+                <ul>
+                    <li class="list-social-media-linkedin"> <a target="_blank" href="https://www.youtube.com/riotgames"><i class="fab fa-linkedin"></i></a></li>
+                    <li class="list-social-media-twitter"> <a target="_blank" href="https://twitter.com/riotgames"><i class="fab fa-twitter"></i></a></li>
+                    <li class="list-social-media-facebook"> <a target="_blank" href="https://www.facebook.com/RiotGames/"><i class="fab fa-facebook-f"></i></a></li>
+                    <li class="list-social-media-instagram"> <a target="_blank" href="https://www.instagram.com/riotgames/"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+                <div class="footer-container-2">
+                        <a href="http://">
+                            Cookie Preferences
+                        </a>
+                        <a href="http://">
+                            2024 Exam Website,Inc.All Rights Reserved.
+                        </a>
+                </div>
+    </footer>
+
+</html>
